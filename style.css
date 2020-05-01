@@ -224,6 +224,19 @@ font-size: 24px;
   max-width: 100%;
     height: auto;
 }
+
+.reservation-container{
+   width: 95%;
+}
+.reservation-date{
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+color: #333333;
+}
+
+
 @media (max-width: 992px) {
   .btn-purple {
     margin-right: 0;
@@ -250,4 +263,7 @@ font-size: 24px;
     margin: 17px 0;
   }
   
+.reservation-container{
+  width: 100%;
+}
 }

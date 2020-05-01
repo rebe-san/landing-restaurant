@@ -364,19 +364,42 @@
         </section>
 
         <section id="reservation" class="section background-rose d-flex justify-content-end"> 
-            <div class="background-white p-5">
+            <div class="reservation-container background-white p-4 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
-                     <div class="col-lg-5"> 
+                     <div class="col-lg-6"> 
                         <p class="subtitle black"> Reserve</p>
-                        <p class="title black">A Table</p>
+                        <p class="title black mb-5">A Table</p>
+                        <form action="" class="">
+                                <div class="form-group">
+                                    <label class="reservation-date" for="">DATE</label>
+                                    <input  type="date" placeholder="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="reservation-date" for="">TIME</label>
+                                    <input  type="date" placeholder="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="reservation-date" for="">GUESTS</label>
+                                    <select class="form-control">
+                                        <option>1 person</option>
+                                        <option>2 people</option>
+                                        <option>3 people</option>
+                                        <option>4 people</option>
+                                        <option>5 people</option>
+                                      </select>
+                                </div>
+                               
+                                
+                                <button class="btn btn-purple">Find a table</button>
+                        </form>
+                          
                      </div>
-                     <div class="col-lg-5">
-                        
+                     <div class="col-lg-6">
+                        <img class="img-fluid" src="./images/reservation_img.png" alt="">
                      </div>
                     </div>
                 </div>
-
             </div>
 
         </section>
@@ -386,21 +409,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <form action="" class="card">
-                        <div class="card-body">
-                            <div class="form-group">
-                                <input type="text" placeholder="Nombre" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Mensaje" cols="30" rows="10"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-outine-secondary btn-block">Enviar</button>
-                        </div>
-
-                    </form>
+             
                 </div>
             </div>
         </div>
