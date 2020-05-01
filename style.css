@@ -43,17 +43,37 @@ body {
   background-position: center center;
 }
 
-.title {
+.title{
   font-family: "PT Serif", serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 56px;
 }
-.subtitle {
+.subtitle{
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
+  font-weight: 300; 
   font-size: 24px;
+}
+
+.paragraph{
+  font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-size: 20px;
+}
+
+.white{
+  color:white
+}
+.black{
+  color:#333333;
+}
+.background-black{
+  background-color: #333333;
+}
+.background-rose{
+  background-color: #f9f7f2;
+}
+.background-white{
+  background-color: white;
 }
 /* #home {
   background-image: url("./images/hero-background.png");
@@ -151,21 +171,16 @@ color: rgba(51, 51, 51, 0.501557);
 .bottom_line {
   border: 1px red solid;
 }
-
-#about,#lunch-menu, #gallery {
+/* 
+#about,#lunch-menu, #gallery , #our-chef{
   background-color: #f9f7f2;
-}
+} */
 
-#events {
-  background-color: #333333;
-}
+
 .events-right div {
   background-color: #ffffff;
 }
-#events .title,
-#events .subtitle {
-  color: #ffffff;
-}
+
 .events-title {
   font-family: "PT Serif", serif;
 
@@ -186,6 +201,29 @@ color: rgba(51, 51, 51, 0.501557);
   width: 100%;
 } */
 
+
+.review{
+  background-color: #ffffff;
+   max-width:20em;
+height: 27em;   
+
+
+}
+
+.paper{
+  font-family: "PT Serif", serif;
+
+font-weight: bold;
+font-size: 24px;
+}
+.press-container{
+  width: 80%;
+  margin:0;
+}
+.div-fluid{
+  max-width: 100%;
+    height: auto;
+}
 @media (max-width: 992px) {
   .btn-purple {
     margin-right: 0;
