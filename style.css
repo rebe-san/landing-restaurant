@@ -179,6 +179,9 @@ color: rgba(51, 51, 51, 0.501557);
   font-size: 20px;
 }
 
+.gallery-img{
+  margin: 32px 0;
+}
 /* #events img{
   width: 100%;
 } */
@@ -204,8 +207,9 @@ color: rgba(51, 51, 51, 0.501557);
     background-color: #ffffff;
     padding: 90px 15px 15px 15px;
   }
-  /* #events img{
-    width: 90%;
-  } */
+  .gallery-img{
+    
+    margin: 17px 0;
+  }
   
 }
