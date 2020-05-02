@@ -19,15 +19,17 @@
 </head>
 
 <body data-spy="scroll" data-target="nav">
-
+    <!-- hero -->
     <section id="hero" class="section">
-            <!-- navbar -->
+        <!-- navbar -->
         <nav id="nav" class="navbar navbar-expand-lg navbar-light  d-flex align-items-center">
-            <a class="navbar-brand font-weight-bold" href="#home">REST</a>
-            <button class="navbar-toggler collapsed rounded-circle" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars text-white" aria-hidden="true"></i>
-            </button>
+            <a class="brand font-weight-bold" href="#home">REST</a>
+            <div class="rounded-circle">
+                <button class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white" aria-hidden="true"></i>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link m-2" href="#about">About Us</a>
@@ -49,34 +51,32 @@
                 </div>
             </div>
         </nav>
-            <!-- home-->
-            <section id="home">
-                <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-lg-6">
-                            <div class="hero-content-right">
-                                <h1 class="font-weight-bold ">Welcome to our restaurant </h1>
-                                <p class="mt-4 font-roboto">
-                                    Everyday 8:00 am - 23:00 pm
-                                </p>
-                                <button class="btn mt-2 btn-purple">Book a table</button>
-                                <button class="btn mt-2 hero-btn btn-outline">See menu</button>
-                            </div>
+        <!-- home-->
+        <section id="home">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content-right">
+                            <h1 class="font-weight-bold ">Welcome to our restaurant </h1>
+                            <p class="mt-4 font-roboto">
+                                Everyday 8:00 am - 23:00 pm
+                            </p>
+                            <button class="btn mt-2 btn-purple">Book a table</button>
+                            <button class="btn mt-2 hero-btn btn-outline">See menu</button>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="header-content-left" style="height:85vh">
-                                <img src="./images/bowl.svg " style="width: 100% ; height: 100%;" alt="">
-                            </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header-content-left" style="height:85vh">
+                            <img src="./images/bowl.svg " style="width: 100% ; height: 100%;" alt="">
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </section>
-    
+
     <!-- main -->
     <main>
-    
-
         <!-- about -->
         <section id="about" class="section d-flex align-items-center background-rose">
             <div class="container">
@@ -88,23 +88,23 @@
                         <div>
                             <p class="subtitle black">Discover</p>
                             <p class="title black">Our History</p>
-                            <p class="text-justify paragraph black">A peep at some distant orb has power to raise and purify our thoughts like a strain of
+                            <p class="text-justify paragraph black">A peep at some distant orb has power to raise and
+                                purify our thoughts like a strain of
                                 sacred music, or a noble picture, or a passage from the grander poets. It always does
                                 one good.A peep at some distant orb has power to raise and purify our thoughts like a
                                 strain of sacred music, or a noble picture, or a passage from the grander poets. It
                                 always does one good.</p>
-                            <button class="btn btn-purple">Read more</button>
+                            <button class="btn btn-purple mb-5">Read more</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- menu -->
-        <section id="menu" class="section d-flex justify-content-end">
-            <div class="menu-container">
-                <div class="row h-100">
-                    <div class="menu-left col-lg-6 d-flex flex-column">
+        <section id="menu" class="section background-rose d-flex justify-content-end">
+            <div class="menu-container background-white p-4 d-flex align-items-center">
+                <div class="menu-row    row">
+                    <div class=" col-lg-6">
                         <div class="menu-title">
                             <p class="subtitle black">Check out our</p>
                             <p class="title black">Seasonal Offers</p>
@@ -115,7 +115,8 @@
                                 <p class="price">$14.00</p>
                             </div>
                             <div>
-                                <p class="description_dish">Served with soy sauce, wasabi, pickled ginger and chopsticks</p>
+                                <p class="description_dish">Served with soy sauce, wasabi, pickled ginger and chopsticks
+                                </p>
                             </div>
                             <hr>
                             <div class="d-flex flex-row justify-content-between">
@@ -123,7 +124,8 @@
                                 <p class="price">$7.00</p>
                             </div>
                             <div>
-                                <p class="description_dish" >Snow crab, avocado, cucumber, tobiko, Japanese mayonnaise</p>
+                                <p class="description_dish">Snow crab, avocado, cucumber, tobiko, Japanese mayonnaise
+                                </p>
                             </div>
                             <hr>
                             <div class="d-flex flex-row justify-content-between">
@@ -143,109 +145,111 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img class="about_img img-fluid pb-5" src="./images/menu_img.png" alt="about_img">
+                    <div class="col-lg-6">
+                        <img class="about_img img-fluid" src="./images/menu_img.png" alt="about_img">
                     </div>
                 </div>
             </div>
         </section>
+        <!-- lunch menu -->
         <section id="lunch-menu" class="section background-rose">
-            <div class="container"> 
-                <div class="d-flex justify-content-center align-items-center flex-column pt-5 lunch-menu-left">                
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center flex-column pt-5 lunch-menu-left">
                     <p class="subtitle black">Tasty dishes</p>
                     <p class="title black">For Lunch</p>
                 </div>
-                <div class="row   pb-5 d-flex justify-content-center align-items-center lunch-menu-right">
-                    <div class="col-lg-6">
+                <div class="row  d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6 p-0 line">
                         <div class="d-flex flex-row p-3 justify-content-center align-items-center bottom_line">
-                          <div>
-                              <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
-                          </div>
-                          <div>
-                            <div class="d-flex flex-row justify-content-between">
-                                <p>Crisp Pork Belly</p>
-                                <p class="price">$18.00</p>
+                            <div>
+                                <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
                             </div>
                             <div>
-                                <p>Candied salmon, basil potato puree, baby kale marsala</p>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <p class="dish">Huitlacoche Tamle</p>
+                                    <p class="price">$14.00</p>
+                                </div>
+                                <div>
+                                    <p class="description_dish">Served pickled ginger and chopsticks</p>
+                                </div>
                             </div>
-                          </div>  
                         </div>
                         <div class="d-flex flex-row p-3 justify-content-center align-items-center bottom_line">
                             <div>
                                 <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
                             </div>
                             <div>
-                              <div class="d-flex flex-row justify-content-between">
-                                  <p>Crisp Pork Belly</p>
-                                  <p class="price">$18.00</p>
-                              </div>
-                              <div>
-                                  <p>Candied salmon, basil potato puree, baby kale marsala</p>
-                              </div>
-                            </div>  
-                          </div>
-                          <div class="d-flex flex-row mb-2 justify-content-center align-items-center">
+                                <div class="d-flex flex-row justify-content-between">
+                                    <p class="dish">Creole Tempeh</p>
+                                    <p class="price">$19.00</p>
+                                </div>
+                                <div>
+                                    <p class="description_dish">Served with soy sauce, wasabi, pickled chopsticks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row p-3 justify-content-center align-items-center">
                             <div>
                                 <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
                             </div>
                             <div>
-                              <div class="d-flex flex-row justify-content-between">
-                                  <p>Crisp Pork Belly</p>
-                                  <p class="price">$18.00</p>
-                              </div>
-                              <div>
-                                  <p>Candied salmon, basil potato puree, baby kale marsala</p>
-                              </div>
-                            </div>  
-                          </div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <p class="dish">Polenta Nera Cake</p>
+                                    <p class="price">$13.00</p>
+                                </div>
+                                <div>
+                                    <p class="description_dish">Served with soy sauce, wasabi, pickled ginger</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 p-0">
                         <div class="d-flex flex-row p-3 justify-content-center align-items-center bottom_line">
                             <div>
                                 <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
                             </div>
                             <div>
-                              <div class="d-flex flex-row justify-content-between">
-                                  <p>Crisp Pork Belly</p>
-                                  <p class="price">$18.00</p>
-                              </div>
-                              <div>
-                                  <p>Candied salmon, basil potato puree, baby kale marsala</p>
-                              </div>
-                            </div>  
-                          </div>
-                          <div class="d-flex flex-row p-3 justify-content-center align-items-center bottom_line">
-                              <div>
-                                  <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
-                              </div>
-                              <div>
                                 <div class="d-flex flex-row justify-content-between">
-                                    <p>Crisp Pork Belly</p>
-                                    <p class="price">$18.00</p>
+                                    <p class="dish">Mediterranean Salad</p>
+                                    <p class="price">$17.00</p>
                                 </div>
                                 <div>
-                                    <p>Candied salmon, basil potato puree, baby kale marsala</p>
+                                    <p class="description_dish">Soy sauce, wasabi, pickled ginger and chopsticks</p>
                                 </div>
-                              </div>  
                             </div>
-                            <div class="d-flex flex-row mb-2 justify-content-center align-items-center">
-                              <div>
-                                  <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
-                              </div>
-                              <div>
+                        </div>
+                        <div class="d-flex flex-row p-3 justify-content-center align-items-center bottom_line">
+                            <div>
+                                <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
+                            </div>
+                            <div>
                                 <div class="d-flex flex-row justify-content-between">
-                                    <p>Crisp Pork Belly</p>
-                                    <p class="price">$18.00</p>
+                                    <p class="dish">Pumpkin Curry</p>
+                                    <p class="price">$22.00</p>
                                 </div>
                                 <div>
-                                    <p>Candied salmon, basil potato puree, baby kale marsala</p>
+                                    <p class="description_dish">Sauce, wasabi, pickled ginger and chopsticks</p>
                                 </div>
-                              </div>  
                             </div>
+                        </div>
+                        <div class="d-flex flex-row p-3 justify-content-center align-items-center">
+                            <div>
+                                <img class="bowl-small" src="./images/bowl.svg" alt="bowl">
+                            </div>
+                            <div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <p class="dish">Warm Kipfler Potato</p>
+                                    <p class="price">$24.00</p>
+                                </div>
+                                <div>
+                                    <p class="description_dish">Wasabi, pickled ginger and chopsticks</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center pb-5">
                     <button class=" btn btn-purple">
                         Full menu
                     </button>
@@ -253,33 +257,35 @@
             </div>
         </section>
         <!-- events -->
-        <section id="events" class="section d-flex justify-content-center align-items-center flex-column background-black">
-            <div class="d-flex justify-content-center align-items-center flex-column pt-5">                
+        <section id="events"
+            class="section d-flex justify-content-center align-items-center flex-column background-black">
+            <div class="d-flex justify-content-center align-items-center flex-column pt-5">
                 <p class="subtitle white">Party with us!</p>
                 <p class="title white text-center">Upcoming Events</p>
             </div>
             <div class="container ">
                 <div class="row p-4">
                     <div class="col-lg-6 p-0">
-                     <img class="w-100 img-fluid" src="./images/events_img.png" alt="girl_coffee">
+                        <img class="w-100 img-fluid" src="./images/events_img.png" alt="girl_coffee">
                     </div>
                     <div class="col-lg-6 p-0 events-right">
-                            <div class=" h-100 p-4">
-                                <p class="events-subtitle">Upcoming</p>
-                                <p class="events-title">Coffee Night</p>
-                                <p>
-                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-                                </p>
-                                <p>25 september, 2019</p>
-                                <button class="btn btn-purple">Read more</button>
-                            </div>
-                        
+                        <div class=" h-100 p-4">
+                            <p class="events-subtitle">Upcoming</p>
+                            <p class="events-title">Coffee Night</p>
+                            <p>
+                                Apparently we had reached a great height in the atmosphere, for the sky was a dead
+                                black, and the stars had ceased to twinkle.
+                            </p>
+                            <p>25 september, 2019</p>
+                            <button class="btn btn-purple">Read more</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- gallery -->
-        <section id="gallery" class="section d-flex justify-content-center align-items-center flex-column background-rose">
+        <section id="gallery"
+            class="section d-flex justify-content-center align-items-center flex-column background-rose">
             <div class="d-flex justify-content-center align-items-center flex-column pt-5">
                 <p class="subtitle black">Gallery</p>
                 <p class="title black">Our Interior</p>
@@ -287,7 +293,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 d-flex justify-content-center">
-                      <img class="img-fluid gallery-img" src="./images/gallery_img_1.png" alt="">
+                        <img class="img-fluid gallery-img" src="./images/gallery_img_1.png" alt="">
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
                         <img class="img-fluid gallery-img" src="./images/gallery_img_2.png" alt="">
@@ -295,8 +301,8 @@
                     <div class="col-md-4 d-flex justify-content-center">
                         <img class="img-fluid gallery-img" src="./images/gallery_img_3.png" alt="">
                     </div>
-                  </div>
-                  <div class="row">
+                </div>
+                <div class="row">
                     <div class="col-md-4 d-flex justify-content-center">
                         <img class="img-fluid gallery-img" src="./images/gallery_img_4.png" alt="">
                     </div>
@@ -306,43 +312,76 @@
                     <div class="col-md-4 d-flex justify-content-center">
                         <img class="img-fluid gallery-img" src="./images/gallery_img_6.png" alt="">
                     </div>
-                  </div>    
+                </div>
             </div>
         </section>
-        <section id="press" class="section d-flex justify-content-center align-items-center flex-column background-black">
+        <!-- opinions -->
+        <section id="opinions" class="background-rose section">
             <div class="d-flex justify-content-center align-items-center flex-column pt-5">
-                <p class="subtitle white">Press</p>
-                <p class="title white">About Us</p>
-            </div>  
-                <div class="container w-100 mx-auto">
-                    <div class="row">
-                        <div class="col-lg-4  d-flex justify-content-center ">
-                            <div class="review m-3 px-4 py-5">
-                                <img class="img-fluid" src="./images/logo_nyt.png" alt="">
-                                <p class="paragraph">"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level."</p>
-                                <p class="paper">The New York Times</p>
-                            </div>
-                          </div>
-                          <div class="col-lg-4  d-flex justify-content-center ">
-                            <div class="review m-3 px-4 py-5">
-                                <img class="img-fluid" src="./images/logo_guardian.png" alt="">
-                                <p class="paragraph">"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level."</p>
-                                <p class="paper">The New York Times</p>
-                            </div>
-                          </div>
-                          <div class="col-lg-4 d-flex justify-content-center ">
-                            <div class="review m-3 px-4 py-5">
-                                <img class="img-fluid" src="./images/logo_wsj.png" alt="">
-                                <p class="paragraph">"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level."</p>
-                                <p class="paper">The New York Times</p>
-                            </div>
-                          </div>
+                <p class="subtitle black"> What people</p>
+                <p class="title black mb-5">Say About Us</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="opinions-container background-white position-absolute">
+                    <div class="container d-flex justify-content-center align-items-center flex-column">
+                        <img class="mb-5" src="./images/opinions_img.png" alt="">
+                        <p class="text-center paragraph black">
+                            As I went on, still gaining velocity, the palpitation of night and day merged into one
+                            continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color
+                            like that of early twilight; the jerking sun became a streak of fire, a brilliant arch.
+                        </p>
+                        <img src="./images/stars.png" alt="">
+                        <p class="paper">Magnus Kekhuis</p>
+                        <p class="price">Restaurant expert</p>
                     </div>
                 </div>
             </div>
-
+            <div class="div-black-1 position-relative w-100 background-black">
+            </div>
         </section>
-        <section id="our-chef" class="section d-flex justify-content-center align-items-center flex-column background-rose">
+        <!-- press  -->
+        <section id="press"
+            class="section d-flex justify-content-center align-items-center flex-column background-black">
+            <div class="d-flex justify-content-center align-items-center flex-column pt-5">
+                <p class="subtitle white">Press</p>
+                <p class="title white">About Us</p>
+            </div>
+            <div class="container w-100 mx-auto">
+                <div class="row">
+                    <div class="col-lg-4  d-flex justify-content-center ">
+                        <div class="review m-3 px-4 py-5">
+                            <img class="img-fluid" src="./images/logo_nyt.png" alt="">
+                            <p class="paragraph">"Apparently we had reached a great height in the atmosphere, for the
+                                sky was a dead black, and the stars had ceased to twinkle. By the same illusion which
+                                lifts the horizon of the sea to the level."</p>
+                            <p class="paper">The New York Times</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  d-flex justify-content-center ">
+                        <div class="review hide m-3 px-4 py-5">
+                            <img class="img-fluid" src="./images/logo_guardian.png" alt="">
+                            <p class="paragraph">"Apparently we had reached a great height in the atmosphere, for the
+                                sky was a dead black, and the stars had ceased to twinkle. By the same illusion which
+                                lifts the horizon of the sea to the level."</p>
+                            <p class="paper">The New York Times</p>
+                        </div>
+                    </div>
+                    <div class=" hide col-lg-4 d-flex justify-content-center ">
+                        <div class="review hide m-3 px-4 py-5">
+                            <img class="img-fluid" src="./images/logo_wsj.png" alt="">
+                            <p class="paragraph">"Apparently we had reached a great height in the atmosphere, for the
+                                sky was a dead black, and the stars had ceased to twinkle. By the same illusion which
+                                lifts the horizon of the sea to the level."</p>
+                            <p class="paper">The New York Times</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- our chef -->
+        <section id="our-chef"
+            class="section d-flex justify-content-center align-items-center flex-column background-rose">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-center align-items-center">
@@ -353,66 +392,90 @@
                             <p class="subtitle black">The word from</p>
                             <p class="title black">Our Chef</p>
                             <p class="text-justify paragraph black">
-                                "A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good."
+                                "A peep at some distant orb has power to raise and purify our thoughts like a strain of
+                                sacred music, or a noble picture, or a passage from the grander poets. It always does
+                                one good."
                             </p>
                             <p class="paper">Slavcho Karbashewski</p>
                             <p class="price">Head Chef</p>
                         </div>
                     </div>
                 </div>
-            
         </section>
+        <!-- reservation -->
+        <section id="reservation" class="background-rose section">
+            <div class="d-flex justify-content-end ">
+                <div class="reservation-container background-white d-flex align-items-center   position-absolute">
+                    <div class="container ">
+                        <div class="reservation-row row ">
+                            <div class="col-lg-6">
+                                <p class="subtitle black"> Reserve</p>
+                                <p class="title black mb-5">A Table</p>
+                                <form action="" class="">
+                                    <div class="form-group">
+                                        <label class="reservation-date" for="">DATE</label>
+                                        <input type="date" placeholder="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="reservation-date" for="">TIME</label>
+                                        <input type="date" placeholder="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="reservation-date" for="">GUESTS</label>
+                                        <select class="form-control">
+                                            <option>1 person</option>
+                                            <option>2 people</option>
+                                            <option>3 people</option>
+                                            <option>4 people</option>
+                                            <option>5 people</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-purple mb-5">Find a table</button>
+                                </form>
 
-        <section id="reservation" class="section background-rose d-flex justify-content-end"> 
-            <div class="reservation-container background-white p-4 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                     <div class="col-lg-6"> 
-                        <p class="subtitle black"> Reserve</p>
-                        <p class="title black mb-5">A Table</p>
-                        <form action="" class="">
-                                <div class="form-group">
-                                    <label class="reservation-date" for="">DATE</label>
-                                    <input  type="date" placeholder="" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="reservation-date" for="">TIME</label>
-                                    <input  type="date" placeholder="" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="reservation-date" for="">GUESTS</label>
-                                    <select class="form-control">
-                                        <option>1 person</option>
-                                        <option>2 people</option>
-                                        <option>3 people</option>
-                                        <option>4 people</option>
-                                        <option>5 people</option>
-                                      </select>
-                                </div>
-                               
-                                
-                                <button class="btn btn-purple">Find a table</button>
-                        </form>
-                          
-                     </div>
-                     <div class="col-lg-6">
-                        <img class="img-fluid" src="./images/reservation_img.png" alt="">
-                     </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="img-fluid" src="./images/reservation_img.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="div-black-2 position-relative w-100 background-black">
+            </div>
 
         </section>
+
+
+
     </main>
     <!-- footer -->
-    <footer id="contact" style="background: #C2D2F2;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-             
-                </div>
+    <footer class="footer background-black d-flex align-items-center justify-content-center flex-column ">
+        <div class="d-flex justify-content-center align-items-center flex-column pt-5">
+            <p class="brand white">REST</p>
+        </div>
+        <div class="container d-flex justify-content-center mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <a class="nav-link white paragraph col-sm-3 text-center" href="#">About Us</a>
+                <a class="nav-link white paragraph col-sm-2 text-center" href="#">Menu</a>
+                <a class="nav-link white paragraph col-sm-2 text-center" href="#">Events</a>
+                <a class="nav-link white paragraph col-sm-2 text-center" href="#">News</a>
+                <a class="nav-link white paragraph col-sm-3 text-center" href="#">Contact</a>
             </div>
         </div>
+        <div class="d-flex flex-row">
+            <a class=" white media-icon" href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="white media-icon" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="white media-icon" href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <p class="copyright">2019 Restaurant. All Rights Reserved.</p>
     </footer>
     <!-- scripts     -->
     <script src="./main.js"></script>
@@ -427,4 +490,5 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
