@@ -3,54 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* PROPERTIES */
 
-body {
-  width: 100vw;
-  background-color: white;
-}
-
-#nav {
-  position: relative;
-  z-index: 999;
-}
-#nav a {
-  color: #ffffff;
-}
-.media-icon {
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(109, 103, 103, 0.7);
-  margin: 0.5em;
-}
-.brand {
-  font-family: "PT Serif", serif;
-  font-weight: bold;
-  font-size: 40px;
-}
 .section {
   width: 100vw;
   min-height: 880px;
-}
-#hero {
-  background-image: url("./images/hero-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-}
-
-#hero::before {
-  background-color: rgba(51, 51, 51, 0.8);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
 }
 .title {
   font-family: "PT Serif", serif;
@@ -83,6 +40,55 @@ body {
 .background-white {
   background-color: white;
 }
+body {
+  width: 100vw;
+  background-color: white;
+}
+/* NAV */
+#nav {
+  position: relative;
+  z-index: 999;
+}
+
+#nav a {
+  color: #ffffff;
+}
+.media-icon {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(109, 103, 103, 0.7);
+  margin: 0.5em;
+}
+.brand {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+/* HERO */
+
+#hero {
+  background-image: url("./images/hero-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+#hero::before {
+  background-color: rgba(51, 51, 51, 0.8);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+
 .hero-content-right h1 {
   font-family: "PT Serif", serif;
   font-size: 72px;
@@ -116,14 +122,7 @@ body {
   background-color: transparent;
   border-color: #ffffff;
 }
-
-.price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  color: rgba(51, 51, 51, 0.501557);
-}
-
+/* MENU */
 #menu p {
   margin: 0;
 }
@@ -147,12 +146,16 @@ body {
   color: rgba(51, 51, 51, 0.50133);
   font-size: 14px;
 }
-
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(51, 51, 51, 0.501557);
+}
 .bowl-small {
   width: 112px;
   height: 112px;
 }
-
 .bottom_line {
   border-bottom: 1px #eaeaea solid;
 }
@@ -160,33 +163,42 @@ body {
   border-right: 1px #eaeaea solid;
 }
 
-.events-right div {
-  background-color: #ffffff;
+/* LUNCH MENU */
+.lunch-menu-row {
+  padding-bottom: 3rem;
+  margin-left: 3rem;
 }
 
+/* EVENTS */
 .events-title {
   font-family: "PT Serif", serif;
-
   font-weight: bold;
   font-size: 40px;
 }
 .evens-subtitle {
   font-family: "Roboto", sans-serif;
-
   font-weight: 300;
   font-size: 20px;
 }
-
+/* GALLERY */
 .gallery-img {
   margin: 32px 0;
 }
 
+/* OPINIONS */
+.opinions-container {
+  z-index: 5;
+  padding: 2em;
+  min-height: 545px;
+  width: 75%;
+}
+
+/* REVIEW */
 .review {
   background-color: #ffffff;
   max-width: 20em;
   height: 27em;
 }
-
 .paper {
   font-family: "PT Serif", serif;
 
@@ -197,10 +209,9 @@ body {
   width: 80%;
   margin: 0;
 }
-.div-fluid {
-  max-width: 100%;
-  height: auto;
-}
+
+
+/* RESERVATION */
 #reservation {
   top: 0;
   left: 0;
@@ -223,19 +234,11 @@ body {
   padding: 2em;
 }
 
-.opinions-container {
-  z-index: 5;
-  padding: 2em;
-  min-height: 545px;
-  width: 75%;
-}
+
 .reservation-row {
   padding: 0 3em;
 }
-.lunch-menu-row {
-  padding-bottom: 3rem;
-  margin-left: 3rem;
-}
+
 .div-black-1 {
   height: 403px;
   top: 246px;
@@ -245,7 +248,7 @@ body {
   height: 200px;
   top: 680px;
 }
-
+/* FOOTER */
 .footer {
   min-height: 456px;
 }
@@ -257,6 +260,9 @@ body {
   text-align: center;
   color: rgba(255, 255, 255, 0.502972);
 }
+
+/* MEDIA QUERIES */
+/* Large mobiles */
 @media (max-width: 992px) {
   .about_img {
     padding: 40px 0 40px 0;
@@ -274,7 +280,7 @@ body {
     padding: 1em;
   }
 }
-
+/* Medium mobiles */
 @media (max-width: 576px) {
   .menu-left {
     padding-top: 0;
