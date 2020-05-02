@@ -3,12 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* PROPERTIES */
 
+.section {
+  width: 100vw;
+  min-height: 880px;
+}
+.title {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 56px;
+}
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.white {
+  color: white;
+}
+.black {
+  color: #333333;
+}
+.background-black {
+  background-color: #333333;
+}
+.background-rose {
+  background-color: #f9f7f2;
+}
+.background-white {
+  background-color: white;
+}
 body {
   width: 100vw;
   background-color: white;
 }
-
+/* NAV */
 #nav {
   position: relative;
   z-index: 999;
@@ -17,7 +53,7 @@ body {
 #nav a {
   color: #ffffff;
 }
-#nav .media-icon {
+.media-icon {
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -27,44 +63,31 @@ body {
   border: 1px solid rgb(109, 103, 103, 0.7);
   margin: 0.5em;
 }
-.navbar-brand {
+.brand {
   font-family: "PT Serif", serif;
+  font-weight: bold;
   font-size: 40px;
 }
-.section {
-  width: 100vw;
-  min-height: 880px;
-  border: 1px solid red;
-}
+/* HERO */
+
 #hero {
   background-image: url("./images/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
 }
 
-.title {
-  font-family: "PT Serif", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 56px;
+#hero::before {
+  background-color: rgba(51, 51, 51, 0.8);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
 }
-.subtitle {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-}
-/* #home {
-  background-image: url("./images/hero-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -90px;
-  z-index: -1;
-  position: relative;
-  padding: 80px 0px 0px 0px;
-  min-height: 880px;
-} */
+
 
 .hero-content-right h1 {
   font-family: "PT Serif", serif;
@@ -99,33 +122,14 @@ body {
   background-color: transparent;
   border-color: #ffffff;
 }
-
-.price{
-  font-family: "Roboto", sans-serif;
-font-weight: 300;
-font-size: 20px;
-color: rgba(51, 51, 51, 0.501557);
-}
-
-/* #about .container,
-#about .container .row,
-#menu .container,
-#menu .container .row,
-#lunch-menu .container,
-#lunch-menu .container .row #events .container,
-#events .container .row {
-  min-height: 100vh;
-} */
-
+/* MENU */
 #menu p {
   margin: 0;
 }
-
-.menu-container {
-  width: 97%;
-  background-color: #ffffff;
-  padding: 2.5em;
+.menu-row {
+  padding: 3em;
 }
+
 .menu-title {
   padding-bottom: 10px;
 }
@@ -142,62 +146,141 @@ color: rgba(51, 51, 51, 0.501557);
   color: rgba(51, 51, 51, 0.50133);
   font-size: 14px;
 }
-
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(51, 51, 51, 0.501557);
+}
 .bowl-small {
   width: 112px;
   height: 112px;
 }
-
 .bottom_line {
-  border: 1px red solid;
+  border-bottom: 1px #eaeaea solid;
+}
+.line {
+  border-right: 1px #eaeaea solid;
 }
 
-#about,#lunch-menu, #gallery {
-  background-color: #f9f7f2;
+/* LUNCH MENU */
+.lunch-menu-row {
+  padding-bottom: 3rem;
+  margin-left: 3rem;
 }
 
-#events {
-  background-color: #333333;
-}
-.events-right div {
-  background-color: #ffffff;
-}
-#events .title,
-#events .subtitle {
-  color: #ffffff;
-}
+/* EVENTS */
 .events-title {
   font-family: "PT Serif", serif;
-
   font-weight: bold;
   font-size: 40px;
 }
 .evens-subtitle {
   font-family: "Roboto", sans-serif;
-
   font-weight: 300;
   font-size: 20px;
 }
-
-.gallery-img{
+/* GALLERY */
+.gallery-img {
   margin: 32px 0;
 }
-/* #events img{
-  width: 100%;
-} */
 
+/* OPINIONS */
+.opinions-container {
+  z-index: 5;
+  padding: 2em;
+  min-height: 545px;
+  width: 75%;
+}
+
+/* REVIEW */
+.review {
+  background-color: #ffffff;
+  max-width: 20em;
+  height: 27em;
+}
+.paper {
+  font-family: "PT Serif", serif;
+
+  font-weight: bold;
+  font-size: 24px;
+}
+.press-container {
+  width: 80%;
+  margin: 0;
+}
+
+
+/* RESERVATION */
+#reservation {
+  top: 0;
+  left: 0;
+}
+
+.reservation-container,
+.menu-container {
+  width: 95%;
+}
+.reservation-date {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+.reservation-container {
+  z-index: 5;
+  min-height: 880px;
+  padding: 2em;
+}
+
+
+.reservation-row {
+  padding: 0 3em;
+}
+
+.div-black-1 {
+  height: 403px;
+  top: 246px;
+}
+
+.div-black-2 {
+  height: 200px;
+  top: 680px;
+}
+/* FOOTER */
+.footer {
+  min-height: 456px;
+}
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.502972);
+}
+
+/* MEDIA QUERIES */
+/* Large mobiles */
 @media (max-width: 992px) {
-  .btn-purple {
-    margin-right: 0;
-  }
   .about_img {
     padding: 40px 0 40px 0;
   }
-  .btn-purple {
-    margin-bottom: 100px;
+
+  .line {
+    border-right: none;
+  }
+  #reservation{
+    min-height: 1000px;
+   }
+  .reservation-container {
+    width: 100%;
+    min-height: 1000px;
+    padding: 1em;
   }
 }
-
+/* Medium mobiles */
 @media (max-width: 576px) {
   .menu-left {
     padding-top: 0;
@@ -207,9 +290,28 @@ color: rgba(51, 51, 51, 0.501557);
     background-color: #ffffff;
     padding: 90px 15px 15px 15px;
   }
-  .gallery-img{
-    
+  .gallery-img {
     margin: 17px 0;
   }
   
+  .menu-row {
+    padding: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+  .reservation-row {
+    padding: 0;
+  }
+  .opinions-container {
+    z-index: 5;
+    padding: 2em;
+    min-height: 545px;
+    width: 90%;
+  }
+
+  .lunch-menu-row {
+    margin-left: 0 1rem 0 1rem;
+  }
 }
